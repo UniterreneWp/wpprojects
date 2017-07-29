@@ -1,0 +1,336 @@
+/* ULINENGM-1456 */
+.cp header { margin: 10px; }
+.cp h1, .cssh1, .pageheadLine { 
+  color: #000;
+  background:#FFF;
+  font-family: Uline-Bold;
+  font-size:16pt;
+  padding: 10px 0px 5px 0px; 
+  text-transform: uppercase; 
+  border-bottom: 1px solid #000; 
+  margin: 10px 0 20px 0; 
+  line-height: 1.2em;
+} /* ULINENGM-2266 ULINENGM-2453 */
+
+.cp_company h1,
+.cp_locations h1,
+.cp_testimonials h1,
+.cp_history h1,
+.cp_president h1 { font-size:16pt; } /* ULINENGM-2711 - keep it 18px on all other cp */
+
+.cp_locations a { text-decoration: none; } /* ULINENGM-2929 */ 
+
+.cp_president img { max-width: 100%; } /* ULINENGM-2843 */
+
+.cp_president .imgCenter { text-align: center; } /* ULINENGM-2843 */
+
+.cp section {
+	margin: 10px;
+  font-size: 12px; /* ULINENGM-2244 */
+  line-height: 1.2em;
+}
+
+.store {
+	padding:15px 0px;
+}
+
+.store a { color:#036; }
+
+.store-address {
+	padding-top:10px;
+	line-height: 1.2em;
+}
+
+.store-address .address { padding-bottom: 5px;}
+
+.forbiddenPage { font-size: 13px; }
+.forbiddenPage img { width: 250px; margin: 0px auto;}
+.forbiddenPage .message div { display: block; margin: 10px; }
+.forbiddenPage .message a { color:#036; }
+/* ULINENGM-1449 */
+.forbiddenPage .btn-primary { background:#0099ff; font-size: 16px; }
+.forbiddenPage .forbidden, .subhead2_red , .cp_president .boldred { color: #F00; font-family: Uline-bold; } /* ULINENGM-2591 && ULINENGM-2955 */
+
+/* ULINENGM-2055 */
+.close_panel img, .fake_close_panel img { height: 30px; margin-bottom: 10px; }
+.zipCode_form { margin: 30px 10px 0px 10px !important; }
+.zipCode_form form, .whiteContent, .whiteBg { background: #FFF; padding: 20px; }
+.estimate h1 { color: #F00; text-align: center; font-family: Uline-bold; margin-bottom: 20px; }
+.EstimatedDeliveryData, .errortext { color: #F00; }
+.zipCode_form .vm { vertical-align: middle; }
+.zipCode_form .group .w30:first-child { padding-right: 10px; }
+.zipCode_form .btn-wrapper { text-align: center; margin-top: 30px; }
+/*.zipCode_infoLocation table { color: #036; font-size: 13px; } ULINENGM-3515 */
+.zipCode_infoLocation td { padding-bottom: 5px; }
+/* ULINENGM-3515 start */
+.zipCode_infoLocation label { 
+  display: inline;
+  line-height: 1em;
+}
+.zipCode_infoLocation .to-row { 
+  color: red;
+  text-align: center;
+  margin-bottom: 10px !important;
+  margin-top: 10px !important;
+}
+.zipCode_infoLocation table .estimateDeliveryLabel, .zipCode_infoLocation .estimateDeliveryFooterText { color: #036; }
+.zipCode_infoLocation table .estimateDeliveryResults { color: red; }
+/* ULINENGM-3515 end */
+.whiteContent table { font-size: 13px; }
+.whiteContent table tr td:first-child { width: 60%; }
+.whiteContent table tr td:last-child { width: 40%; }
+
+ /* ULINENGM-2268 */
+.cp_generic .cookieinstructionsTitle label, .cookieinstructionsTitle b { font-size:16px; margin: 20px 0px; display: block; font-family: Uline-bold;}
+.cp_generic .cookieinstructionsSection label { font-size:14px; margin: 10px 0px 5px 0px; }
+.cp_generic table { width: 100%; }
+.cp_generic table td { width: auto; vertical-align: middle; } /* ULINENGM-2596 */
+.cp_generic .PrintEmailError { color: #f00; }/*ULINENGM-2721*/
+.cp_generic label { display: inline; }
+
+.cp_generic a { text-decoration: none; color: #0C4893; } /* ULINENGM-3781 */
+
+/* ULINENGM-2268 */
+.cp_generic { font-size: 13px; }
+.cp_generic .breadcrumbs-bg { display: none; }
+.cssh2 { font-size: 16px; margin-bottom: 10px; font-family: Uline-bold; }
+.left_col p { font-family: Uline-bold; margin:10px 0px 5px 0px;}
+
+/* ULINENGM-2266 */
+.errorPage table { width: 100%; }
+.errorPage td[width="150"] { width:10% !important; }
+
+.h2 { font-size: 16px; margin-bottom: 1em; }
+.h3 { font-size: 14px; margin-bottom: 1em; }
+.cp-heading { font-family: Uline-bold; margin-bottom: 5px; padding-top: 10px; }
+
+.corporateInfo { margin: 20px 0px; }
+.corporateInfo > ul:first-child  { font-size: 16px; margin-bottom: 10px; }
+.corporateInfo > ul:first-child > li:first-child { text-decoration: underline; font-family: Uline-bold; }
+.corporateInfo .info_3 { margin-bottom: 10px; }
+.corporateInfo li { vertical-align: bottom; }
+.countryInfo .title { font-size: 14px; margin: 20px 0px 5px 0px; text-decoration: underline; font-family: Uline-bold; }
+.countryInfo.mexico { border-top: 1px solid #CCC; margin-top:20px !important; }
+.info div { margin-bottom: 5px; }
+
+ul[type="disc"] { list-style-type: disc; margin-left: 20px; }
+
+table p { margin-top: 20px; }
+.signInContainer p { margin-top: 0; }
+/* .signInContainer br { display: none; } ULINENGM-2445 */
+.FAQText td[width="15%"] { width: 20%; padding-bottom: 20px; }
+.FAQText tr[valign="top"] td { padding-bottom: 20px; }
+
+.tag-residential label { padding-top: 5px; padding-bottom: 5px; line-height: 1.2em; } /* ULINENGM-2438 */
+#lblIEnterMyPassword br { display: none; }
+/* ULINENGM-2412 */
+#lblTestYourCookies { margin: 0px; }
+#lblTestYourCookies + br, #lblToEnabelYourCookies + br { display: none; }
+
+
+
+/* ULINENGM-2613 */
+.carouselize li:not(:first-child) { display: none; }
+.carousel-tests li { font-size: 0; }
+.card {
+  display: block;
+  width: 100%;
+}
+
+.ytImage {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 70px;
+  margin: -35px 0 0 -35px;
+}
+
+.links-carousel li,
+#links-based-carousel li {
+  display: block;
+  font-size: 12px;
+  line-height: 50px;
+}
+.links-carousel a,
+#links-based-carousel a {
+  background: #CCC;
+  display: block;
+  border-right: 1px dotted #000;
+  line-height: 50px;
+  text-align: center;
+}
+.carouselNavigation { text-align: center; padding: 10px 0px; }
+.carouselNavigation img { width: 11px; margin:0px 3px; cursor: pointer; } /*ULINENGM-1598* width:20px margin:0px 5px previous */
+.carouselNavigation .active { display: none; }
+.carouselNavigation .inactive, .carouselNavigation .active:first-child { display: inline-block; }
+.carouselNavigation .inactive:nth-child(2) { display: none; }
+#pdpCarousel { position: relative; }
+
+.block_title{
+  color: #FFF;
+  background: #036;
+  text-transform: uppercase;
+  padding: 5px; 
+  font-family: Uline-bold;
+}
+.block_text{ padding: 10px 0px 15px 0px; }
+
+/* ULINENGM-2706 */
+.testimonials_banner_text{
+  width: 60% !important;
+  color: #FFF;
+  background: #036;
+  font-size: 12px;
+  text-align: center;
+  vertical-align: middle !important;
+  padding: 0px 20px;
+  height: 70px !important;
+}
+.testimonials_banner_img{ width: 40% !important; height: 70px !important; }
+.testimonials_banner_img img{ width: 100% !important; height: 100% !important;  display: block;}
+.testimonials_block{
+  padding: 20px 0px;
+  border-bottom: 1px solid #E5E5E5;
+  color: #036;
+  font-size: 10px;
+}
+.testimonials_block:last-child{ border-bottom: 0px !important; }
+.testimonials_title{ 
+  font-size: 12px;
+  padding-bottom: 10px;
+}
+
+.history_header span{ 
+  text-transform: uppercase; 
+  font-weight: bold;
+  font-size: 14px;
+}
+.history_names{ 
+  border-bottom: 1px solid #E5E5E5; 
+  padding-bottom: 10px;
+  text-align: center;
+}
+/* ULINENGM-2770 */
+.from_president {
+  margin-bottom: 10px;
+}
+/* ULINENGM-2843 + ULINENGM-2837 */
+.from_president_title{ 
+  font-size: 16pt;
+  font-family: Uline-bold; /* ULINENGM-2712 */
+  padding: 5px 10px;
+  color: white;
+  background: red;
+  line-height: 16pt;
+  margin: 0 -10px;
+  margin-bottom: 10px;
+}
+.red_header { 
+  display: block;
+  color: white;
+  background: red;
+  text-transform: uppercase;
+  padding: 5px;
+  font-family: Uline-bold;
+}
+/* ULINENGM-2843 */
+.from_president ul{
+  margin-left: 20px;
+  list-style: initial;
+}
+.from_president li{
+  padding-bottom: 10px;
+}
+.liz_line{   
+  border-bottom: 1px solid #003366;
+  padding-bottom: 6px;  
+}
+.liz_title{ 
+  text-align: center; 
+  color: #003366;
+}
+.liz_cont{
+  margin-top: 10px;
+  padding: 10px;
+  background: #f1f1f1;
+}
+.liz_cont ul{
+  margin-left: 20px;
+  list-style: initial;
+}
+.liz_cont li{
+  padding-bottom: 10px;
+}
+.liz_cont li:last-child{ padding-bottom: 0px; }
+.liz_cont li a{
+  color: #003366;
+  text-decoration: none;
+  font-size: 12px;
+}
+.liz_hide{ display: none; }
+.view_liz{
+  text-align: right;
+  padding-bottom: 10px;
+  padding-top: 10px; /* ULINENGM-2718 */
+  padding-right: 20px; /* ULINENGM-2718 */
+  color: #999; /* ULINENGM-2704 */
+}
+/* ULINENGM-2709 start */
+.view_liz:before {
+  content: '';
+  display: inline-block;
+  width: 11px;
+  height: 11px;
+  margin-right: 5px;
+  background: url("/h5/images/plusminus.w_1475759390000hc.gif") no-repeat;
+  background-position: 0 0;
+}
+.view_liz.expanded_view_liz:before {
+  background-position: 0 -11px;
+}
+/* ULINENGM-2709 end */
+.manitowishWaters { text-align: center; }
+.manitowishWaters li { display: inline-block; width: 90px; margin: 10px; vertical-align: top; }
+.manitowishWaters img { width: 100%; }
+.manitowishWaters a { color: #009; text-decoration: none; }
+/* END ULINENGM-2613 */
+
+#litContainerCustomHTML img { width: 100%; } /* ULINENGM-2645 */
+
+/* ULINENGM-2826 start */
+.cp_president .assetImg { 
+  background: url("/h5/images/signatureLizUihlein.w_1475759390000hc.png") no-repeat;
+  display: block;
+  height: 91px;
+  background-position: right;
+}
+/* end ULINENGM-2826 */
+
+/* ULINENGM-2745 */
+.cp_generic ul, 
+.cp_generic ol {
+  padding-bottom: 10px;
+  padding-left: 20px;
+}
+.cp_generic ul {
+  list-style-type: disc;
+} 
+.cp_generic ol {
+  list-style-type: decimal;
+}
+/* ULINENGM-2888 start */
+.cp_president .green_box{
+  background-color:#008000;
+  font-size: 12pt; /* ULINENGM-2906 */
+  color: #FFF;
+  padding:10px;
+  margin: 0 -10px;
+  font-family: Uline-bold;
+}
+/* end ULINENGM-2888 */
+
+/* ULINENGM-2904 start */
+.cp_company a{
+  text-decoration: none;
+}
+/* end ULINENGM-2904 */

@@ -1,0 +1,1 @@
+Excel-like product manager for wooCommerce multi-import addon

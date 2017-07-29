@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html class="no-js https  anonymous  en-language">
+<head>
+<link href="<?php echo get_stylesheet_directory_uri(); ?>/template-css.css" rel="stylesheet" type="text/css">
+<link href="<?php echo get_stylesheet_directory_uri(); ?>/m-style.css" rel="stylesheet" type="text/css">
+<link href="<?php echo get_stylesheet_directory_uri(); ?>/innerpage.css" rel="stylesheet" type="text/css">
+<link href="<?php echo get_stylesheet_directory_uri(); ?>/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no">
+<?php wp_head(); 
+$upload_dir = wp_upload_dir();
+?>
+<?php //if(is_front_page()) {?>
+<!-- homepage.css -->
+
+<?php
+//}
+if(is_front_page()) {
+$bodyclass='';
+}else{
+	$bodyclass=get_post_type().'class';
+	}
+?>
+</head>
+<body class="<?php echo $bodyclass;?>">
+<div class="panel"></div>
+<div class="overlay"></div>
+<div class="menuize_overlay"></div>
+<nav class="menuize_panel menuize_panel-left">
+  <aside>
+	  <?php 
+/*$defaults = array( 'menu' => '', 'container' => '', 'container_class' => '', 'container_id' => '', 'menu_class' => 'menu_l1', 'menu_id' => '',
+    'echo' => true, 'fallback_cb' => 'wp_page_menu', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', 'item_spacing' => 'preserve',
+    'depth' => 0, 'walker' => '', 'theme_location' => 'header_menu' );*/
+	
+	 $defaults = array( 'menu' => 'covalin menu', 'container' => '', 'container_class' => '', 'container_id' => '', 'menu_class' => 'menu', 'menu_id' => '',
+    'echo' => true, 'fallback_cb' => 'wp_page_menu', 'before' => '', 'after' => '', 'link_before' => '', 'link_after' => '', 'items_wrap' => '<ul id="%1$s" class="%2$s">%3$s</ul>', 'item_spacing' => 'preserve',
+    'depth' => 0, 'walker' => '', 'theme_location' => '' );
+	
+	
+wp_nav_menu($defaults); ?>
+    
+    <div class="menu_l3">
+      <ul class="thirdTier">
+        <li class="subSelected"></li>
+      </ul>
+    </div>
+  </aside>
+</nav>
+<nav>
+  <div id="mini-cart-overlay"></div>
+  <div id="mini-cart">
+    <ul class="group">
+      <li class="w40">
+        <h1>Cart</h1>
+      </li>
+      <li class="w60">
+        <h2>Subtotal: <span class="green"></span></h2>
+      </li>
+    </ul>
+    <a href="" class="model">
+    <ul class="group mini-cart-product">
+      <li class="mini-cart-prd-image">  </li>
+      <li class="mini-cart-prd-descr">
+        <div class="name"></div>
+        <div class="sku sky"></div>
+        <ul class="group totals">
+          <li class="qty"></li>
+          <li class="price">Price: <span class="green"></span></li>
+        </ul>
+      </li>
+    </ul>
+    </a>
+    <div class="items"></div>
+    <div id="mini-cart-actions">
+      <div class="bottomFixed">
+        <ul class="group">
+          <li style="padding-right: 5px;"> <a href="Product/ViewCart " class="btn btn-secondary">Edit cart</a> </li>
+          <li style="padding-left: 5px;"> <a href="#" class="btn btn-primary checkout" data-jse="">Checkout</a> </li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</nav>
+<header class="main-header">
+  <ul class="group">
+    <li class="menu-icon"> <a href="#" class="menuize_show-left left-menu-icon"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/menu-icon.png" alt="menu" class="menu-closed-icon" /> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/menu-icon-opened.png" alt="menu" class="menu-opened-icon" /> </a> </li>
+    <li class="logo "> <a href="<?php echo home_url()?>"> <img src=" http://onlinedevserver.biz/dev/storex-store/wp-content/uploads/2013/06/footer-logo.png" /> </a> </li>
+    <li class="search-icon index white"> <a href="#"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/search.png" alt="search-icon" /> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/search-opened.png" alt="search-icon" /> </a> </li>
+    <li class="user-icon"<?php if ( is_user_logged_in() ) {?> onclick="location.href = '<?php echo get_permalink( get_option('woocommerce_myaccount_page_id') ); ?>';"<?php }?>> <a href="MyAccount/MyUline" class="h-user h-user-guest"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/user-icon.png" alt="user-icon" /> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/user-icon-blue.png" class="hide" alt="user-icon" /> </a> </li>
+    <li class="phone-icon"> <a href="#"> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/phone-icon.png" alt="phone-icon" /> </a> </li>
+   
+    <li class="cart-icon"> 
+    <?php
+    if ( WC()->cart->get_cart_contents_count() == 0 ) {
+	?>  <a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/cart-icon.png" alt="cart-icon" class="regular" /> <img src="data:image/gif;base64,R0lGODlhAQABAIAAAP///wAAACH5BAkUAAEALAAAAAABAAEAAAICTAEAOw==" data-bundle="bundle/cart-icon-white.png" alt="cart-icon-white" class="inverse" /></a>
+    <?php
+	}else{?>
+    <a href="<?php echo wc_get_cart_url(); ?>" title="<?php _e( 'View your shopping cart' ); ?>"><span class="catitemcount" onclick="location.href = '<?php echo wc_get_cart_url(); ?>';"><?php echo WC()->cart->get_cart_contents_count(); ?></span>
+  <i class="fa fa-shopping-cart" aria-hidden="true" onclick="location.href = '<?php echo wc_get_cart_url(); ?>';"></i>
+
+    </a>
+    <?php
+	}
+	?></li>
+     <?php if ( is_user_logged_in() ) {?>
+    <li class="user-icon" onclick="location.href = '<?php echo wp_logout_url( get_permalink() ); ?>';"> <a href="<?php echo wp_logout_url( get_permalink() ); ?>" class="h-user h-user-guest"> <i class="fa fa-sign-out" aria-hidden="true"></i>
+ </a> </li>
+    <?php }?>
+  </ul>
+  <div class="plp-title hide"></div>
+  <div class="search-box ">
+ <?php 
+echo do_shortcode('[autocomplete_search_bar]');
+?>
+    
+  </div>
+  <div class="predictive-results hide"></div>
+  <div class="user-login hide">
+    <?php /*?><form action="" method="post" secure="true" >
+      <input type="hidden" name="flyout" value="true"/>
+      <div class="field">
+        <div class="form-heading">Sign In <a href="#" class="local" data-local-selector="#help_panel"> </a></div>
+        <input type="email" name="username" placeholder="Email Address" class="textfield userEmail" value="" maxlength="50"/>
+      </div>
+      <div class="field">
+        <input type="password" name="password" class="textfield" placeholder="Password" maxlength="20"/>
+      </div>
+      <button name="signin" value="true" class="btn btn-primary">Sign In</button>
+      <ul class="user-links group">
+        <li><a href="Signin/SignInEmailPWD" class="forgotPswLink">Forgot Password</a></li>
+        <li><a href="Signin/ChangeMyEmail">Update Email Address</a></li>
+      </ul>
+      <hr class="en"/>
+      <div class="field">
+        <input type="email" id="emailRegister" name="emailRegister" placeholder="Email Address" class="textfield userEmail" maxlength="50"/>
+      </div>
+      <div class="register_buttons_cont">
+        <button name="register" value="true" class="btn btn-secondary">Register</button>
+      </div>
+    </form><?php */
+	woocommerce_login_form();?>
+  </div>
+  <div class="user-myaccount hide"></div>
+  <div class="hide">
+    <div id="help_panel" class="generalOverlayPanel"> <a href="#" class="modal_close close_panel"></a>
+      <div class="margins">
+        <div class="strong text-center gap">Account Benefits</div>
+        <div class="gap"> In addition to saving your billing and shipping addresses, take advantage of:
+          <ul class="gap">
+            <li>Tracking your order</li>
+            <li>Easy reordering from order history</li>
+            <li>Express checkout</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+<main class="menuize_main">
+  <div class="page_content"> 
+     <article class="homepage search-margins">
+      <header></header>
+   
+      <section>
+   <?php
+   if(is_front_page()||is_home()) {
+	  //if(is_home()){}else{
+	   ?>
+ 
+        <div class="banner">
+        <a href="http://onlinedevserver.biz/dev/storex-store/products/"> 
+        <img src="<?php echo $upload_dir['baseurl'];?>/2013/06/mobile-banner-1.jpg" class="card w100"/> </a>
+        
+        </div>
+           <?php
+	 //  }
+   }else{/*
+	   ?>
+       <article>			
+			<header>
+				<h1>
+					<?php //echo get_the_title();?>
+				</h1>
+			</header>						
+			
+			<section>
+            <?php*/
+	   }?>
+        
