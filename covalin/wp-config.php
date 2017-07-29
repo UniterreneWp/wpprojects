@@ -2,6 +2,7 @@
 /** Enable W3 Total Cache */
 define('WP_CACHE', true); // Added by W3 Total Cache
 define( 'AUTOMATIC_UPDATER_DISABLED', true );
+define('FS_METHOD','direct');
 /**
  * The base configuration for WordPress
  *
@@ -23,13 +24,13 @@ define( 'AUTOMATIC_UPDATER_DISABLED', true );
 
 // ** MySQL settings - You can get this info from your web host ** //
 /** The name of the database for WordPress */
-define('DB_NAME', 'covalindotnet');
+define('DB_NAME', 'covalin');
 
 /** MySQL database username */
-define('DB_USER', 'covalindotnet');
+define('DB_USER', 'root');
 
 /** MySQL database password */
-define('DB_PASSWORD', 'covalin.net.http://');
+define('DB_PASSWORD', '');
 
 /** MySQL hostname */
 define('DB_HOST', 'localhost');
